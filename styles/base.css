@@ -15,7 +15,7 @@ body {
 .navigation a {
     display: block;
     text-align: center;
-    color: lightskyblue;
+    color: white;
     padding: .25rem;
     font-size: 1.25rem;
 }
@@ -25,7 +25,6 @@ body {
 }
 nav {
     background-color: #4d5061ff;
-    color: white;
     grid-column: 1/4;
     padding: .5rem;
 }
@@ -85,7 +84,8 @@ main h1 {
     margin: 3.75rem 3.25rem 0 1rem;
     box-shadow: 3px 3px 3px #4d5061ff;
     grid-row: 1/2;
-    grid-column: 3/4
+    grid-column: 3/4;
+    max-width: 150px;
 }
 #country-heading {
     grid-row: 2;
@@ -107,6 +107,7 @@ main h1 {
     grid-column: 1;
     margin: 3rem 1rem 1rem 1rem;
     box-shadow: 3px 3px 3px #4d5061ff;
+    max-width: 200px;
 }
 #flag-caption {
     grid-row: 4;
@@ -137,11 +138,12 @@ main h1 {
     font-size: 1.25rem;
 }
 .links a{
+    color: black;
     white-space: nowrap;
     font-size: 1.25rem;
 }
 .links a:hover {
-    color: #4d5061ff;
+    color:  #4d5061ff;
 }
 footer {
     font-family: Arimo;
