@@ -27,7 +27,7 @@
         grid-template-columns: repeat(3, auto);
         gap: 1rem 1rem;
     }
-    main h1 {
+    main h2 {
         grid-column: 1/4;
     }
     figcaption{
