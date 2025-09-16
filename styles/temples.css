@@ -4,7 +4,7 @@ body {
 }
 header {
     display: block;
-    background: gray;
+    background: #184477;
     color: white;
     margin: 0 auto;
 }
@@ -36,7 +36,7 @@ figcaption{
     padding-top: .5rem;
 }
 footer {
-    background-color: gray;
+    background-color: #184477;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -44,7 +44,7 @@ footer {
 }
 
 nav {
-	background-color:  gray;
+	background-color:  #184477;
 }
 
 nav ul {
@@ -79,7 +79,7 @@ nav a:hover {
 .open li a {
 	display: block;
 }
-#menu{
+#menu-button{
     display: block;
 	font-size: 1rem;
 	border: 2px solid rgba(0,0,0,.3);
@@ -92,10 +92,10 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 1px 1.5px 15px black;
 }
-#menu::before {
+#menu-button::before {
 	content: '☰';
 }
 
-#menu.open::before {
+#menu-button.open::before {
 	content: '❌';
 }
