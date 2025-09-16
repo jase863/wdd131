@@ -1,0 +1,41 @@
+@media screen and (min-width: 480px){
+
+    header{
+        background-color: gray;
+        color: white;
+        display: flex;
+        /* padding-top: .25rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    #menu{
+        display: none;
+    }
+    nav ul {
+        padding-top: 1rem;
+        flex-direction: row;
+    }
+    nav a {
+        display: flex;
+        flex: 1 1 100%;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+    main{
+        grid-template-columns: repeat(3, auto);
+        gap: 1rem 1rem;
+    }
+    main h1 {
+        grid-column: 1/4;
+    }
+    figcaption{
+        padding-top: .5rem;
+    }
+    footer{
+        margin: 0 auto;
+        background-color: gray;
+        margin-top: 3rem;
+    }
+}
