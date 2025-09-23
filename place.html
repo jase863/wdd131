@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Jason Walker</title>
+    <meta name="description" content="Jason Walker's country page for WDD131 - Dynamic Web Fundamentals, taught at BYU-I">
+    <meta name="author" content="Jason Walker">
+    <link rel="stylesheet" href="styles/country.css">
+    <link rel="stylesheet" href="styles/country-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <script defer src="scripts/country.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Germany</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/castle-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/castle-medium.webp" media="(min-width: 400px)">
+                <img src="images/castle-small.webp" alt="Neuschwanstein Castle, Bavaria" width="400" height="">
+            </picture>
+        </div>
+        <div class="data">
+            <h1>Data</h1>
+            <p class="area"></p>
+            <p class="population"></p>
+            <p class="capital"></p>
+            <p class="lang"></p>
+            <p class="currency"></p>
+            <p class="timezone"></p>
+            <p class="calling-code"></p>
+            <p class="tld"></p>
+        </div>
+        <div class="weather">
+            <h1>Weather</h1>
+            <div class="icon"></div>
+            <p class="temp"></p>
+            <p class="conditions"></p>
+            <p class="wind"></p>
+            <p class="chill"></p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            | Jason Walker | Utah
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

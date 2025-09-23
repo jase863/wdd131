@@ -1,0 +1,55 @@
+:root{
+    --main-bg-color: #911212;
+}
+
+body{
+    font-family: "Arimo";
+}
+header {
+    background-color: var(--main-bg-color);
+    color: white;
+    width: 100%;
+}
+header h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+}
+.hero{
+    margin: 0 auto;
+    width: 100%;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    margin-top: 1rem;
+}
+.data{
+    border: 2px solid black;
+    margin: 1rem;
+}
+.data h1{
+    text-align: center;
+}
+.weather{
+    border: 2px solid black;
+    margin: 1rem;
+}
+.weather h1{
+    text-align: center;
+}
+.icon::after{
+    content: url("images/partly_cloudy_icon.svg");
+}
+
