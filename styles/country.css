@@ -1,9 +1,13 @@
 :root{
     --main-bg-color: #911212;
+    --normal-margin: 1rem;
+    --heading-size: 2rem;
+    --data-size: 1.3rem;
 }
 
 body{
     font-family: "Arimo";
+    background-color: rgb(218, 218, 56);
 }
 header {
     background-color: var(--main-bg-color);
@@ -11,9 +15,10 @@ header {
     width: 100%;
 }
 header h1{
-    font-size: 3rem;
+    font-size: var(--heading-size);
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
+    margin: 0 auto;
 }
 main{
     display: grid;
@@ -33,23 +38,32 @@ footer {
     text-align: center;
     width: 100%;
     padding: 2rem 0 2rem 0;
-    margin-top: 1rem;
+    margin-top: 0;
+    font-size: var(--data-size);
 }
-.data{
-    border: 2px solid black;
-    margin: 1rem;
-}
-.data h1{
+.data, .weather{
+    display: block;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+    width: 100%;
     text-align: center;
+    padding-bottom: var(--normal-margin);
 }
-.weather{
-    border: 2px solid black;
-    margin: 1rem;
+.data-heading{
+    font-size: var(--heading-size);
+    padding: 1rem 1rem 1.25rem 1rem;
 }
-.weather h1{
-    text-align: center;
+.data, .weather p{
+    font-size: var(--data-size);
 }
-.icon::after{
-    content: url("images/partly_cloudy_icon.svg");
+.weather-heading{
+    font-size: var(--heading-size);
+    padding: 1rem 1rem 1.5rem 1rem;
 }
-
+.weather-icon{
+    display: block;
+    margin: 0 auto;
+    width: 9rem;
+    height: 9rem;
+}
