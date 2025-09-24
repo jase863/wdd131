@@ -1,10 +1,62 @@
 @media screen and (min-width: 640px){
+    header h1{
+        font-size: 4rem;
+    }
     main {
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
     }
     .hero {
         grid-column: 1/4;
+        grid-row: 1/4;
+        margin-bottom: 0;
     }
-    
+    .data-heading{
+        text-align: start;
+        background-color: rgb(218, 218, 56);
+        width: 20rem;
+        margin-right: -5rem;
+        padding-left: 1.5rem;
+        margin-left: -1rem;
+        color: black;
+    }
+    .data{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+        background-color: black;
+        opacity: .75;
+        text-align: center;
+    }
+    .data p{
+        color: white;
+        text-align: center;
+    }
+    .weather{
+        grid-column: 3;
+        grid-row: 3/4;
+        margin-bottom: 3rem;
+        margin-left: -1.5rem;
+        background-color: black;
+        opacity: .75;
+    }
+    .weather-icon{
+        display: none;
+    }
+    .weather-heading::after{
+        content: '⛅';
+        font-size: var(--heading-size);
+        padding-left: var(--heading-size);
+    }
+    .weather-heading{
+        text-align: start;
+        background-color: rgb(218, 218, 56);
+        width: 20rem;
+        margin-right: -2rem;
+        padding-left: 1.5rem;
+        margin-left: -1rem;
+        color: black;
+    }
 }
