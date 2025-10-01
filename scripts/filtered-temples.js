@@ -75,21 +75,21 @@ const temples = [
     location: "Chorley, England",
     dedicated: "1998, June, 10",
     area: 69630,
-    imageUrl: "https://churchofjesuschrist.org/imgs/dafda3d9cb0b8f120919a2a8559a71d4d021ecd3/full/400%2C/0/default?download=false"
+    imageUrl: "images/preston_temple.webp"
   },
   {
     templeName: "Ogden Utah",
     location: "Ogden, Utah, United States",
     dedicated: "2014, September, 6",
     area: 112232,
-    imageUrl: "https://churchofjesuschrist.org/imgs/bd2ff8df8ff328fdf5f73cd509e6907a6aa2bb77/full/400%2C/0/default?download=false"
+    imageUrl: "images/ogden_utah_temple.webp"
   },
   {
     templeName: "Bern Switzerland",
     location: "Zollikofen, Switzerland",
     dedicated: "1992, October, 25",
     area: 35546,
-    imageUrl: "https://www.churchofjesuschrist.org/imgs/ab0e8e9dc71618a068fed965c7a4710dc39faabc/full/400%2C/0/default?download=false"
+    imageUrl: "images/bern_switzerland_temple_lds.webp"
   }
 ];
 
@@ -121,6 +121,7 @@ function CreateTempleCard(temples){
         image.src = temple.imageUrl;
         image.alt = `${temple.templeName} temple`;
         image.loading = "lazy";
+        image.width = 400;
 
         templeContainer.appendChild(name);
         templeContainer.appendChild(location);
