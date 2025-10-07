@@ -18,33 +18,32 @@
         <header class="title">Product Review</header>
         <form method="get" action="review.html">
             <fieldset>
-                <legend></legend>
-                <legend>Product Name*</legend>
+                <p>Product Name*</p>
                 <label>
                     <select id="product-selection" name="subject" required>
-                        <option value="default-option" disabled selected>Select a Product*</option>
+                        <option value="" disabled selected>Select a Product*</option>
                     </select>
                 </label>
-                <legend>Overall Rating*</legend>
+                <p>Overall Rating*</p>
                     <div class="rating-group">
-                        <label><input type="radio" id="1-star" name="rating" value="1" for="onestar" required> ⭐</label>
-                        <label><input type="radio" id="2-star" name="rating" value="2" for="threestar"> ⭐⭐</label>
+                        <label><input type="radio" id="1-star" name="rating" value="1" required> ⭐</label>
+                        <label><input type="radio" id="2-star" name="rating" value="2" > ⭐⭐</label>
                         <label><input type="radio" id="3-star" name="rating" value="3"> ⭐⭐⭐</label>
                         <label><input type="radio" id="4-star" name="rating" value="4"> ⭐⭐⭐⭐</label>
                         <label><input type="radio" id="5-star" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
                     </div>
-                <legend>Date of Installation*</legend>
+                <p>Date of Installation*</p>
                     <label id="install-date"><input type="date" name="install-date" required></label>
-                <legend>Useful Features (Check all that apply)</legend>
+                <p>Useful Features (Check all that apply)</p>
                     <div class="checkbox">
                         <label><input type="checkbox" id="check1" name="durability">Durability</label>
                         <label><input type="checkbox" id="check2" name="ease-of-use">Ease of Use</label>
                         <label><input type="checkbox" id="check3" name="performance">Performance</label>
                         <label><input type="checkbox" id="check4" name="design">Design</label>
                     </div>
-                <legend>Written Review (Optional)</legend>
+                <p>Written Review (Optional)</p>
                     <label><textarea id="written-review" name="written-review"></textarea></label>
-                <legend>Your Name (Optional)</legend>
+                <p>Your Name (Optional)</p>
                     <label><input type="text" id="username" name="user-name"></label>
                 <input type="submit" value="Post My Review" class="submitBtn">
             </fieldset>

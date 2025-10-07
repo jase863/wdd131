@@ -19,9 +19,10 @@ form{
     margin-top: 1rem;
     background-color: #b1caf5;
 }
-legend{
-    padding: .5rem .5rem 0 .5rem;
-    font-size: 1.125rem;
+p{
+    padding: 0 .5rem;
+    margin-bottom: 0;
+    font-size: 1.25rem;
 }
 select, input[type='date']{
     height: 44px;
