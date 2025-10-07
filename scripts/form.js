@@ -1,3 +1,4 @@
+// Footer Content
 const date = new Date();
 
 document.querySelector("#currentyear").innerHTML = `&copy;${date.getFullYear()}`
@@ -5,6 +6,23 @@ document.querySelector("#currentyear").innerHTML = `&copy;${date.getFullYear()}`
 document.querySelector("#lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
 
 
+// Visit Counter
+const visitsCounter = document.querySelector(".visits");
+
+let visits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (visits !== 0) {
+	visitsCounter.textContent = `Number of visits: ${visits}`;
+} else {
+	visitsCounter.textContent = `This is your first visit.`;
+}
+
+visits++;
+
+localStorage.setItem("numVisits-ls", visits);
+
+
+// Adding products to dropdown
 const products = [
   {
     id: "fc-1888",

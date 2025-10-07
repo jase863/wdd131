@@ -88,6 +88,14 @@ input[type='submit']{
     padding-right: 2%;
     border-radius: .5rem;
 }
+#thanks-div{
+    font-size: 2rem;
+    text-align: center;
+    padding: 5rem;
+}
+.visits{
+    margin-left: 2rem;
+}
 footer {
     background-color:#3f5479;
     color: white;
