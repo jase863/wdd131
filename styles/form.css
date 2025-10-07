@@ -32,6 +32,7 @@ select, input[type='date']{
     padding-left: 2%;
     padding-right: 2%;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 label{
     display: block;
@@ -63,6 +64,7 @@ textarea{
   margin: .5rem;
   padding-left: 2%;
   padding-right: 2%;
+  margin-bottom: 1rem;
   box-sizing: border-box;
 }
 input[type='text']{
@@ -73,6 +75,7 @@ input[type='text']{
   margin: .5rem;
   padding-left: 2%;
   padding-right: 2%;
+  margin-bottom: 1rem;
   box-sizing: border-box;
 }
 input[type='submit']{
