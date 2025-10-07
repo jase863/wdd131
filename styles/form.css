@@ -1,12 +1,12 @@
 :root{
     --normal-font: 1rem;
 }
-header{
+h1{
     background: #3f5479;
     display: block;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1.5rem;
     color: white;
 }
