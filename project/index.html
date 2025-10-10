@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing Guru | Jason Walker</title>
+    <meta name="description" content="Jason Walker's final project for WDD131 - Dynamic Web Fundamentals, taught at BYU-I">
+    <meta name="author" content="Jason Walker">
+    <link rel="stylesheet" href="styles/guru.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/guru.js"></script>
+</head>
+<body>
+    <header>
+            <h1 id="site-title">3D Printing Guru</h1>
+            <button id="menu-button" aria-label="Hamburger Menu Button"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="materials.html/">Materials</a></li>
+                    <li><a href="modeling.html">Modeling</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <button class="banner-close">❌</button>
+        <div class="banner">
+            <h2></h2>
+        </div>
+        <h2 class="printer-styles">Printer Styles</h2>
+        <p class="info">Click each picture to learn more</p>
+        <div class=fdm-div>
+            <h2 class="printer-label">FDM Printer</h2>
+            <img class="fdm-img" loading="lazy" src="images/fdm-printer1.webp" alt="filament 3D printer">
+            <p class="fdm-description">
+                Fused Deposition Modeling (FDM) is the most common type of 3D printing. 
+                It works by heating plastic filament and pushing it through a nozzle. 
+                Just like CNC machines, 3D printers use G-Code to move in a predetermined
+                path, depositing the plastic layer by layer to form a solid object<br>
+                <br>
+                FDM printing is fairly easy to learn, and the
+                materials are cheaper than other printing options. This makes it a great
+                choice for prototyping. The materials are also relatively strong compared
+                to other methods of 3D printing. However, there are downsides to using FDM
+                printers. For instance, they are a lot slower than other methods, and their
+                surface finishes don't look quite as nice.
+            </p>
+        </div>
+        <div class=sla-div>
+            <h2 class="printer-label">SLA Printer</h2>
+            <img class="sla-img" loading="lazy" src="images/sla-printer.webp" alt="filament 3D printer">
+             <p class="sla-description">
+                Fused Deposition Modeling (FDM) is the most common type of 3D printing. 
+                It works by heating plastic filament and pushing it through a nozzle. 
+                Just like CNC machines, 3D printers use G-Code to move in a predetermined
+                path, depositing the plastic layer by layer to form a solid object<br>
+                <br>
+                FDM printing is fairly easy to learn, and the
+                materials are cheaper than other printing options. This makes it a great
+                choice for prototyping. The materials are also relatively strong compared
+                to other methods of 3D printing. However, there are downsides to using FDM
+                printers. For instance, they are a lot slower than other methods, and their
+                surface finishes don't look quite as nice.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            | Jason Walker | Utah
+        </p>
+        <p id="lastModified"></p>
+    </footer>
