@@ -4,7 +4,7 @@
     --body-font: Lato;
     /* rem values */
     --normal-rem: 1rem;
-    --normal-plus-rem: 1.5;
+    --normal-plus-rem: 1.5rem;
 
     /* colors */
     --header: #8C271E;
@@ -93,7 +93,8 @@ nav a:hover {
         color: var(--light-text);
         font-size: var(--normal-rem);
         position: absolute;
-        top: 10%;
+        top: 11%;
+        opacity: .95;
 }
 
 .banner-close {
@@ -205,7 +206,7 @@ nav a:hover {
         padding: 5.5rem;
         font-size: var(--normal-plus-rem);
         grid-column: 1/4;
-        top: 17%;
+        top: 18%;
     }
     .banner-close {
         top: 20%;
