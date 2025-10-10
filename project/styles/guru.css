@@ -1,12 +1,15 @@
 :root{
+    /* fonts */
     --heading-font: Kanit;
     --body-font: Lato;
+    /* rem values */
     --normal-rem: 1rem;
+    --normal-plus-rem: 1.5;
+
+    /* colors */
     --header: #8C271E;
     --hover: #e8c547ff;
     --headings: #30323dff;
-    --heading-font: Kanit;
-    --paragraph-font: Lato;
     --boxes: #4d5061ff;
     --background1: #cdd1c4ff;
     --paragraphs: #153243;
@@ -14,8 +17,14 @@
 }
 
 /* General styling */
+header h1, main h2, footer, .banner, nav a{
+    font-family: var(--heading-font);
+}
+header h1, footer, nav a, .open li a, #menu-button{
+    padding: var(--normal-rem);
+}
 body {
-    font-family: 'Lato';
+    font-family: var(--body-font);
     margin: 0 auto;
     max-width: 100%;
 }
@@ -29,7 +38,6 @@ header h1{
     margin: 0;
     padding-left: var(--normal-rem);
     padding-top: var(--normal-rem);
-    font-family: var(--heading-font);
 }
 main{
     display: grid;
@@ -37,7 +45,6 @@ main{
     place-items: center;
 }
 main h2{
-    font-family: var(--heading-font);
     color: var(--headings)
 }
 p{
@@ -45,10 +52,8 @@ p{
 }
 footer {
     background-color: var(--header);
-    padding: var(--normal-rem);
     text-align: center;
     margin-top: var(--normal-rem);
-    font-family: var(--heading-font)
 }
 footer p{
     color: var(--light-text);
@@ -70,10 +75,8 @@ nav a {
 	color: white;
     align-items: center;
 	text-align: center;
-	padding: var(--normal-rem);
 	text-decoration: none;
 	font-size: larger;
-    font-family: var(--heading-font);
 }
 
 nav a:hover {
@@ -84,21 +87,22 @@ nav a:hover {
 /* Home page styling */
 .banner {
         background-color: var(--boxes);
-        padding: 1.5rem 0;
-        width: 96%;
+        padding: 5rem .25rem;
+        width: 94%;
         text-align: center;
         color: var(--light-text);
-        font-family: var(--heading-font);
         font-size: var(--normal-rem);
         position: absolute;
-        top: 8%;
+        top: 10%;
 }
+
 .banner-close {
     position: absolute;
-    top: 10%;
-    text-align: center;
-    font-size: 20px;
+    top: 12%;
+    right: 5%;
+    font-size: var(--normal-plus-rem);
     z-index: 10;
+    border-radius: .25rem;
 }
 .printer-styles{
     text-align: center;
@@ -121,6 +125,9 @@ nav a:hover {
     background-color: var(--boxes);
     margin-bottom: var(--normal-rem);
 }
+.fdm-div:hover, .sla-div:hover{
+    background-color: lightgray;
+}
 .fdm-description, .sla-description{
     display: none;
 }
@@ -134,7 +141,6 @@ nav a:hover {
 }
 .open li a {
 	display: block;
-    padding: var(--normal-rem);
 }
 #menu-button{
     display: block;
@@ -155,7 +161,6 @@ nav a:hover {
 }
 .open .fdm-description, .open .sla-description{
     display: block;
-    text-align: justify;
     padding: .5rem var(--normal-rem);
     color: var(--background1);
 }
@@ -198,7 +203,7 @@ nav a:hover {
     /* Larger home styling */
     .banner {
         padding: 5.5rem;
-        font-size: 1.5rem;
+        font-size: var(--normal-plus-rem);
         grid-column: 1/4;
         top: 17%;
     }
@@ -222,7 +227,7 @@ nav a:hover {
         background-color: var(--light-text);
         border: none;
         margin-top: var(--normal-rem);
-        margin-bottom: 15rem;
+        margin-bottom: 25rem;
         height: 800px;
     }
     .fdm-div{
@@ -244,11 +249,8 @@ nav a:hover {
     
     .open .fdm-description, .open .sla-description{
         visibility: visible;
-        text-align: justify;
         padding: var(--normal-rem);
-        margin: 0;
-        color: var(--background1);
-        background-color: #4d5061ff;
+        background: var(--boxes);
     }
     .open .fdm-div, .open .sla-div{
         background: var(--boxes);
