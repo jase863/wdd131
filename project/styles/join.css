@@ -144,10 +144,14 @@ input[type='submit']{
     margin-top: var(--normal-plus-rem);
     font-size: var(--normal-plus-rem);
 }
+.title{
+    max-width: 100%;
+}
 #thanks-div{
     font-size: 2rem;
     text-align: center;
     padding: 5rem;
+    max-width: 96%
 }
 /* buttons*/
 
@@ -219,4 +223,15 @@ input[type='submit']{
     footer{
         margin-top: 5rem;
     }
-}   
+    .title{
+    max-width: 100%;
+    grid-column: 1/4;
+    }
+    #thanks-div{
+        font-size: 2rem;
+        text-align: center;
+        padding: 5rem;
+        max-width: 96%;
+        grid-column: 1/4;
+    }
+}  
