@@ -4,22 +4,23 @@ document.querySelector("#lastModified").innerHTML = `Last Modification: ${docume
 
 //  Number of visits for discount
 const banner = document.querySelector('.banner');
+const bannerText = document.querySelector('.banner-text');
 const bannerClose = document.querySelector('.banner-close');
 
 let visits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 let subPrice = 49.99;
 
-if (visits < 150) {
+if (visits < 1) {
     banner.style.display = 'block';
-	banner.textContent = `Welcome! Since this is your first visit to our site, 
-    enjoy a 20% discount off of the normal price of $${subPrice}! Total price for a lifetime subscription is only $${(subPrice - (subPrice * .2)).toFixed(2)}. 
+	bannerText.textContent = `Welcome! Since this is your first visit to our site, 
+    enjoy a 20% discount off of the normal price of $${subPrice}! Total price for a lifetime subscription is only $${CalcSubPrice(visits, subPrice)}. 
     Enter "FRST220" on the join page to get your discount.`;
 } 
 else if (visits < 5) {
 	banner.style.display = 'block';
-	banner.textContent = `Welcome back! You missed your shot for a 20% discount, but you
-    still qualify for a 10% discount off of the normal price of $${subPrice}! Total price for a lifetime subscription is only $${(subPrice - (subPrice * .1)).toFixed(2)}.
-    Enter "SECND210" on the join page to get your discount.`;
+	bannerText.textContent = `Welcome back! You missed your shot for a 20% discount, but you
+    still qualify for a 10% discount off of the normal price of $${subPrice}! Total price for a lifetime subscription is only $${CalcSubPrice(visits, subPrice)}.
+    Enter "SCND210" on the join page to get your discount.`;
 }
 else {
     banner.style.display = 'none';
@@ -35,10 +36,27 @@ visits++;
 
 localStorage.setItem("numVisits-ls", visits);
 
+function CalcSubPrice(visits, subPrice) {
+    if (visits < 1) {
+        subPrice -= (subPrice *.2);
+    }
+    else if (visits >= 1 ) {
+        subPrice -= (subPrice *.1);
+    }
+    return subPrice.toFixed(2);
+}
+
 // content
 
+const welcomeMSG = document.querySelector('.welcome');
 const fdmContent = document.querySelector('.fdm-description');
 const slaContent = document.querySelector('.sla-description');
+
+welcomeMSG.innerHTML = `Welcome to 3D Printing Guru! We are passionate about all things 3D 
+printing, and we hope to be able to share some of the wisdom that we've gained 
+over the years.<br><br>Be sure to check out our materials page to learn about some of our
+favorites. If you like our content, sign up on our join page to get access to all that our
+site has to offer.`
 
 fdmContent.innerHTML = `Fused Deposition Modeling (FDM) is the most common type of 3D printing. 
                 It works by heating plastic filament and pushing it through a nozzle. 
@@ -57,7 +75,7 @@ slaContent.innerHTML = `Resin printers use a technology called Stereolithography
                 laser or LCD screen, the printer presses the build plate against the 
                 bottom of the vat and displays UV light in predetermined patterns for 
                 each layer. Just like FDM printers, SLA printers build models layer by 
-                layer. Unlike FDM printers, SLA printers print an entire layer at once, 
+                layer. Unlike FDM printers, these printers print an entire layer at once, 
                 which means that the print time for multiple models will be the same as 
                 one model.<br>
                 <br>

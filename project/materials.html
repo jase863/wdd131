@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Printing Guru | Jason Walker</title>
-    <meta name="description" content="Jason Walker's final project home page for WDD131 - Dynamic Web Fundamentals, taught at BYU-I">
+    <title>Materials | Jason Walker</title>
+    <meta name="description" content="Jason Walker's final project materials page for WDD131 - Dynamic Web Fundamentals, taught at BYU-I">
     <meta name="author" content="Jason Walker">
-    <link rel="stylesheet" href="styles/guru.css">
+    <link rel="stylesheet" href="styles/materials.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="scripts/guru.js"></script>
+    <script defer src="scripts/materials.js"></script>
 </head>
 <body>
     <header>
@@ -21,31 +21,25 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="materials.html">Materials</a></li>
+                    <li><a href="materials.html/">Materials</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
     </header>
     <main>
-        <button class="banner-close">❌</button>
-        <div class="banner">
-            <h2 class="banner-text"></h2>
+        <h2 class="material-types">Materials</h2>
+        <div class="info-div">
+            <h3 class="info"></h3>
         </div>
-        <div class="welcome-div">
-            <h3 class="welcome"></h3>
+        <div class=filament-div>
+            <h2 class="material-label">Filament</h2>
+            <img class="filament-img" loading="lazy" src="images/orange-filament.webp" alt="3D printer filament">
+            <div class="filament-cards"></div>
         </div>
-        
-        <h2 class="printer-styles">Printer Styles</h2>
-        <p class="info">Click each picture to learn more</p>
-        <div class=fdm-div>
-            <h2 class="printer-label">FDM Printer</h2>
-            <img class="fdm-img" loading="lazy" src="images/fdm-printer1.webp" alt="filament 3D printer">
-            <p class="fdm-description"></p>
-        </div>
-        <div class=sla-div>
-            <h2 class="printer-label">SLA Printer</h2>
-            <img class="sla-img" loading="lazy" src="images/sla-printer.webp" alt="resin 3D printer">
-             <p class="sla-description"></p>
+        <div class=resin-div>
+            <h2 class="material-label">Resin</h2>
+            <img class="resin-img" loading="lazy" src="images/resin-bottle.webp" alt="3D printer resin bottle">
+            <div class="resin-cards"></div>
         </div>
     </main>
     <footer>

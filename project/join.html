@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Jason Walker</title>
+    <meta name="description" content="Jason Walker's final project join page for WDD131 - Dynamic Web Fundamentals, taught at BYU-I">
+    <meta name="author" content="Jason Walker">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/join.js"></script>
+</head>
+<body>
+    <header>
+            <h1 id="site-title">3D Printing Guru</h1>
+            <button id="menu-button" aria-label="Hamburger Menu Button"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                    <!-- <li><a href="modeling.html">Modeling</a></li> -->
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+    </header> 
+    <main>
+        <div class="subscribe-plus">
+            <h2>Subscription Benefits</h2>
+            <h3 class="benefits-msg"></h3>
+            <ul class="sub-description"></ul>   
+        </div>
+            <form>
+                <fieldset>
+                    <label for="discount-code">Discount Code
+                        <input type="text" name="discount-code" id="discount-code" class="discount-code">
+                    </label>
+                    <p class="sub-price"></p>
+                    <button type="button" class="code-button">Check Code</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Information</legend>
+                        <div>*Denotes a Required Field</div>
+                        <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
+                        <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
+                        <label for="email">Email* <input type="email" id="email" name="email" placeholder="example@gmail.com"></label>
+                        <label for="cell-phone">Cell Phone<input type="tel" name="mobile-phone" id="cell-phone" placeholder="800-444-3222"></label>
+                        <input for="submit" type="submit" value="Apply to Join" id="submit">
+                </fieldset>
+            </form>
+    </main>
+</body>
+<footer>
+    <p>
+        <span id="currentyear"></span>
+        | Jason Walker | Utah
+    </p>
+    <p id="lastModified"></p>
+</footer>
