@@ -5,22 +5,11 @@ document.querySelector("#currentyear").innerHTML = `&copy;${date.getFullYear()}`
 
 document.querySelector("#lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
 
-
-// Visit Counter
-const visitsCounter = document.querySelector(".visits");
-
-let visits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-if (visits !== 0) {
-	visitsCounter.textContent = `Number of visits: ${visits}`;
-} else {
-	visitsCounter.textContent = `This is your first visit.`;
-}
-
-visits++;
-
-localStorage.setItem("numVisits-ls", visits);
-
+document.querySelectorAll("label, p").forEach(fieldTitle => {
+    if (fieldTitle.textContent.includes("*")) {
+        fieldTitle.style.color = "red";
+    }
+});
 
 // Adding products to dropdown
 const products = [

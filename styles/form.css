@@ -1,5 +1,5 @@
 :root{
-    --normal-font: 1rem;
+    --normal-rem: 1rem;
 }
 h1{
     background: #3f5479;
@@ -19,16 +19,19 @@ form{
     margin-top: 1rem;
     background-color: #b1caf5;
 }
+.required-msg{
+    padding: 2rem var(--normal-rem);
+}
 p{
-    padding: 0 .5rem;
+    padding: 0;
     margin-bottom: 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 select, input[type='date']{
     height: 44px;
     width: 96%;
     max-width: 460px;
-    font-size: var(--normal-font);
+    font-size: var(--normal-rem);
     margin: .5rem;
     padding-left: 2%;
     padding-right: 2%;
@@ -61,7 +64,7 @@ textarea{
   height: 10rem;
   width: 96%;
   max-width: 460px;
-  font-size: var(--normal-font);
+  font-size: var(--normal-rem);
   margin: .5rem;
   padding-left: 2%;
   padding-right: 2%;
@@ -72,7 +75,7 @@ input[type='text']{
   height: 44px;
   width: 96%;
   max-width: 460px;
-  font-size: var(--normal-font);
+  font-size: var(--normal-rem);
   margin: .5rem;
   padding-left: 2%;
   padding-right: 2%;
@@ -94,7 +97,7 @@ input[type='submit']{
     text-align: center;
     padding: 5rem;
 }
-.visits{
+.reviews{
     margin-left: 2rem;
 }
 footer {
@@ -104,7 +107,6 @@ footer {
     text-align: center;
     margin-top: 1rem;
 }
-
 @media screen and (min-width: 480px){
     main{
         display: block;

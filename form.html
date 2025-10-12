@@ -17,13 +17,14 @@
     <main>
         <h1 class="title">Product Review</h1>
         <form method="get" action="review.html">
+            <p class="required-msg">* Denotes a Required Field</p>
             <fieldset>
-                <label for="product-selection">Product Name*</label>
+                <label class="product-selection "for="product-selection">Product Name*</label>
                 <select id="product-selection" name="subject" required>
                     <option value="" disabled selected>Select a Product*</option>
                 </select>
 
-                <p>Overall Rating*</p>
+                <p class="rating-group">Overall Rating*</p>
                 <div class="rating-group">
                     <label for="1-star"><input type="radio" id="1-star" name="rating" value="1" required> ⭐</label>
                     <label for="2-star"><input type="radio" id="2-star" name="rating" value="2"> ⭐⭐</label>
